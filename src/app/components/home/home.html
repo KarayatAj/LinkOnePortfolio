@@ -1,0 +1,13 @@
+<div class="home-container">
+    <div class="banner" [style.backgroundImage]="'url(' + profile.bannerUrl + ')'">
+        <div class="overlay"></div>
+    </div>
+    <div class="profile-content">
+        <div class="avatar-wrapper">
+            <img [src]="profile.avatarUrl" [alt]="profile.name" class="avatar">
+        </div>
+        <h1 class="name">{{ profile.name }}</h1>
+        <h2 class="title">{{ profile.title }}</h2>
+        <p class="bio">{{ profile.bio }}</p>
+    </div>
+</div>
